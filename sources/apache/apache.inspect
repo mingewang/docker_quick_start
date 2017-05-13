@@ -1,0 +1,220 @@
+[
+    {
+        "Id": "c3b5c9c84a728e1f24e0f2fedadb0e2f92fd3a277d23290f3e100a85707d8175",
+        "Created": "2017-02-02T03:23:31.863555265Z",
+        "Path": "/usr/sbin/apache2ctl",
+        "Args": [
+            "-D",
+            "FOREGROUND"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-02-04T03:51:21.261538577Z",
+            "FinishedAt": "2017-02-04T04:36:45.67022295Z"
+        },
+        "Image": "sha256:f9f1826ca3a80fc5baa37e0ff1d560176c6117c9312bb3e8bada328d18f2798c",
+        "ResolvConfPath": "/var/lib/docker/containers/c3b5c9c84a728e1f24e0f2fedadb0e2f92fd3a277d23290f3e100a85707d8175/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c3b5c9c84a728e1f24e0f2fedadb0e2f92fd3a277d23290f3e100a85707d8175/hostname",
+        "HostsPath": "/var/lib/docker/containers/c3b5c9c84a728e1f24e0f2fedadb0e2f92fd3a277d23290f3e100a85707d8175/hosts",
+        "LogPath": "/var/lib/docker/containers/c3b5c9c84a728e1f24e0f2fedadb0e2f92fd3a277d23290f3e100a85707d8175/c3b5c9c84a728e1f24e0f2fedadb0e2f92fd3a277d23290f3e100a85707d8175-json.log",
+        "Name": "/apache_container",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/var/www:/var/www2",
+                "/home/mwang/Development/comrite/books/docker/sources/apache/log:/var/log/apache2",
+                "/home/mwang/Development/comrite/books/docker/sources/apache/mytest:/mytest"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "10080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "aufs",
+            "Data": null
+        },
+        "Mounts": [
+            {
+                "Source": "/home/mwang/Development/comrite/books/docker/sources/apache/mytest",
+                "Destination": "/mytest",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Name": "72c724388ea7bf7b8d54dd9a1f8c945c5ba762f7550a4101a87f3c63661d4035",
+                "Source": "/var/lib/docker/volumes/72c724388ea7bf7b8d54dd9a1f8c945c5ba762f7550a4101a87f3c63661d4035/_data",
+                "Destination": "/mytest2",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Source": "/home/mwang/Development/comrite/books/docker/sources/apache/log",
+                "Destination": "/var/log/apache2",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/var/www",
+                "Destination": "/var/www2",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "c3b5c9c84a72",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "APACHE_LOG_DIR=/var/log/apache2"
+            ],
+            "Cmd": null,
+            "Image": "my_apache",
+            "Volumes": {
+                "/mytest": {},
+                "/mytest2": {},
+                "/var/log/apache2": {},
+                "/var/www2": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/usr/sbin/apache2ctl",
+                "-D",
+                "FOREGROUND"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "aa97e0dda605f58e2dfaab43f7d22a370ffad6e4b4791b3de7b174864954da04",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": null,
+            "SandboxKey": "/var/run/docker/netns/aa97e0dda605",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "e362c14e21c9629328a4b6cc8e6e298d28f64ade9779090fd89c49c67d67d24d",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": ""
+                }
+            }
+        }
+    }
+]
