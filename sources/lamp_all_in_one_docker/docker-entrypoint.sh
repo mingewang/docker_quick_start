@@ -52,5 +52,5 @@ service apache2 restart
 # if you have supervisor
 #service supervisor restart
 
-tail -f /var/log/messages
+tail -f /var/log/*
 
