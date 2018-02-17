@@ -8,11 +8,11 @@ docker build -t lamp .
 
 ## how to run it
 
-docker run --rm --publish 9080:80 -v $(pwd)/html:/var/www/html -v $(pwd)/mysql-data:/var/lib/mysql -e HOST_UID=$(id -u) -e HOST_GID=$(id -g) lamp 
+docker run --rm --publish 9080:80 -v $(pwd)/html:/var/www/html -v $(pwd)/mysql-data:/var/lib/mysql lamp 
 
 run it as detach mode, and always restart 
 
-docker run --detach --restart always --publish 9080:80 -v $(pwd)/html:/var/www/html -v $(pwd)/mysql-data:/var/lib/mysql -e HOST_UID=$(id -u) -e HOST_GID=$(id -g) lamp 
+docker run --detach --restart always --publish 9080:80 -v $(pwd)/html:/var/www/html -v $(pwd)/mysql-data:/var/lib/mysql lamp 
 
 You should be able to access it at your host:
 
