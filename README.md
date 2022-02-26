@@ -1,4 +1,4 @@
-# docker for dummies in real world
+# docker quick start
 
 This repo contains sample source code for this book.
 
